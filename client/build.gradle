@@ -1,0 +1,13 @@
+plugins {
+  id 'rbento.starter.java-application-conventions'
+}
+
+dependencies {
+  implementation libs.bundles.grpc.minimal
+  implementation libs.commons.lang3
+  implementation libs.grpc.java.starter.api.java
+}
+
+application {
+  mainClass = 'rbento.starter.Client'
+}

@@ -1,0 +1,10 @@
+plugins {
+  id 'rbento.starter.java-common-conventions'
+  id 'application'
+}
+
+jar {
+  manifest {
+    attributes 'Main-Class': application.mainClass
+  }
+}

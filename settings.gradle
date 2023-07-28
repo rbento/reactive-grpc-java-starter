@@ -1,0 +1,8 @@
+
+pluginManagement {
+  includeBuild('build-logic')
+}
+
+rootProject.name = 'grpc-java-starter'
+
+include('api', 'client', 'server')

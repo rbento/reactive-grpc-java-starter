@@ -1,0 +1,18 @@
+plugins {
+  id 'rbento.starter.java-library-conventions'
+  id 'com.google.protobuf'
+}
+
+dependencies {
+  compileOnly libs.javax.annotation.api
+  compileOnly libs.bundles.grpc.minimal
+}
+
+// https://github.com/google/protobuf-gradle-plugin/issues/8
+// https://github.com/google/protobuf-gradle-plugin/issues/722
+// https://github.com/protocolbuffers/protobuf/issues/12056
+protobuf {
+  protoc {
+    artifact = libs.protoc.artifact.platform.get()
+  }
+}
