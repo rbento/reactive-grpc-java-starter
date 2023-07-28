@@ -1,6 +1,6 @@
-# grpc-java-starter
+# reactive-grpc-java-starter
 
-Simple starter for grpc-java based projects.
+Simple starter for plain Reactive gRPC APIs using Java and Reactor as an implementation of Reactive Streams.
 
 ### Requirements
 
